@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Njagah.com</title>
+    <script src="https://kit.fontawesome.com/f0463686ec.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/n-logo.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/njagah Logo.png" class="logo" />
+                <ul>
+                    <li><a href="#header-text">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web/Front-End developer</p>
+                <h1>Hi, I'm <span>Ian Njagah</span> <br> From Kenya Nairobi.</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/njagah.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="njagah">
+                        Hello! I'm Njagah, a passionate developer. With a background in React,JavaScript,Python,Css and Html, 
+                        I bring a unique perspective to web development. I am passionate about creating efficient, scalable, and user-friendly applications, and thrive on tackling complex coding challenges. 
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or experimenting with different programming paradigms. I believe in the power of clean, well-documented code to drive innovation and transform ideas into reality.
+                    </p>    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('expirience')">Expirience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>   
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>web/software</span><br>Developing Web applications</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Team Work</span><br>Working with others</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="expirience">
+                        <ul>
+                          <li><span>Free-Lance</span><br>By Myself</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-current</span><br>Moringa School</li>
+                           <li><span>2021-2022</span><br>St Gabriel Mission School Nakuru</li>
+                           <li><span>2019-2021 </span><br>St Sec Francis School Subukia</li>
+                        </ul>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </div>
+         <!-------------services------------------>
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="Services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Custom software Development</h2>
+                <p>I specialize in developing custom software solutions tailored to your specific needs.
+                    I ensure a seamless development process with a strong emphasis on quality and user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Software Consulting </h2>
+                <p>I provide expert software consulting services to help you make informed decisions about your technology stack, architecture, and overall software strategy.
+                    I collaborate closely with your team to define project goals, identify challenges, and devise effective solutions.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Code Review and Quality Assurance:</h2>
+                <p>With a keen eye for detail and a commitment to delivering high-quality code, I offer code review and quality assurance services.
+                    By conducting comprehensive testing and quality checks, I help you enhance the reliability and stability of your software.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-----------------------------------portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="port1.webp.jpg" alt="">
+                    <div class="layer">
+                        <h3>social media app</h3>
+                         <p>The app connects you to the telented people around the world.
+                            Download it from playstore.
+                         </p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                     </div>
+                  </div>
+                <div class="work">
+                    <img src="music2.avif" alt=""><div class="layer">
+                        <h3>music app</h3>
+                         <p>The app connects you to the telented people and their magic voice around the world.
+                            Download it from playstore.
+                         </p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="online.webp" alt="">
+                    <div class="layer">
+                        <h3>online shopping app</h3>
+                         <p>The app connects you to the best onlineshop around the world.
+                            Download it from playstore.
+                         </p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                     </div>
+                </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!---------------------------contact--------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me:</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@ianndungu06@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>0717393483</p>
+                <div class="social-icons">
+                    <a href="#https://www.instagram.com/_njagah_/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#https://www.instagram.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#https://www.instagram.com/_njagah_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="#" class="btn btn2">Download CV</a>
+            </div>
+<!---------------- Include the emailjs-com and SweetAlert2 libraries ----------------------->
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+            <div class="contact-right">
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" />
+                    <input type="email" id="email" placeholder="Your Email" />
+                    <textarea id="message" placeholder="Your Message"></textarea>
+                    <button type="button" class="btn btn2" onclick="sendMessage()">Send Message</button>
+                </form>
+            </div>
+
+            <script>
+                // Initialize the emailjs-com library with your user ID
+                emailjs.init("uZ9YRGKNjK1faDgv0");
+
+                // Function to send the message
+                function sendMessage() {
+                    // Get form data
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const message = document.getElementById("message").value;
+
+                    // consolelog form data for debugging
+                    console.log("Name:", name);
+                    console.log("Email:", email);
+                    console.log("Message:", message);
+
+                    // Check if any field is empty
+                    if (!name || !email || !message) {
+                        // sweetAlert icon
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Please fill in all fields!',
+                            confirmButtonColor: '#3085d6',
+                            confirmButtonText: 'OK'
+                        });
+                        return;
+                    }
+
+                    // Send email
+                    emailjs.send("portfolio_zpn6gso", "portfolio_svv9meo", {
+                        to_email: "ianndungu06@gmail.com",
+                        from_name: name,
+                        from_email: email,
+                        message: message,
+                    })
+                    .then(function(response) {
+                        console.log("Email sent successfully", response);
+                        // Use SweetAlert2 for a success message
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success!',
+                            text: 'Message sent successfully!',
+                            confirmButtonColor: 'orange',
+                            confirmButtonText: 'OK'
+                        });
+                        // Optionally, clear the form fields
+                        document.getElementById("contactForm").reset();
+                    }, function(error) {
+                        console.log("Error sending email", error);
+                        // Use SweetAlert2 for an error message
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Error sending message. Please try again later.',
+                            confirmButtonColor: 'orange',
+                            confirmButtonText: 'OK'
+                        });
+                    });
+                }
+            </script>
+
+
+
+        </div>
+    </div>
+</div>
+<script src="./index.js"></script>
+
+</body>
+</html>
