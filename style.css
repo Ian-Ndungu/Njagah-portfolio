@@ -347,6 +347,62 @@ form .btn2 {
 }
 
 /*---------------------running media queries---------*/
-@media only screen and (max-width: 600px) {
-    /* Add your mobile styles here */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    #header {
+        height: 50vh; /* Adjust header height for smaller screens */
+    }
+
+    .header-text {
+        margin-top: 10%; /* Adjust margin-top for smaller screens */
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .header-text h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    nav ul li {
+        margin: 10px 10px; /* Adjust margin for smaller screens */
+    }
+
+    .sub-title {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .Services-list div {
+        padding: 20px; /* Adjust padding for service items on smaller screens */
+        font-size: 12px; /* Adjust font size for service items on smaller screens */
+    }
+
+    .work img {
+        width: 100%; 
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Make contact sections full-width on smaller screens */
+    }
+
+    form input, form textarea {
+        width: 100%; /* Make form inputs full-width on smaller screens */
+    }
+
+    .copyright {
+        padding: 15px 0; /* Adjust padding for copyright section on smaller screens */
+    }
+
+    .about-col-1 img {
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 50px; /* Add margin-top to move the image down */
+    }
+
+    .layer {
+        padding: 0 20px;
+        font-size: 12px;
+        margin-top: 20px; /* Add margin-top to move the overlay text down */
+    }
 }
