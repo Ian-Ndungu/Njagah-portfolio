@@ -347,7 +347,7 @@ form .btn2 {
 }
 
 /*---------------------running media queries---------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
     body {
         font-size: 14px; /* Adjust font size for smaller screens */
     }
