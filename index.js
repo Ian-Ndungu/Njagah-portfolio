@@ -12,3 +12,5 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+// Get the current year and insert it into the copyright span
+document.getElementById('current-year').textContent = new Date().getFullYear();

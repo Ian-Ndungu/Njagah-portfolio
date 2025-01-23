@@ -15,8 +15,6 @@
     <div id="header">
       <div id="container">
         <nav>
-          <!-- <img src="images/n-logo.png" class="logo-img" />
-          <span class="logo-text">jagah</span> -->
           <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -26,6 +24,22 @@
           </ul>
         </nav>
         <div class="header-text">
+          <!-- Background Rings -->
+          <div class="background-ring background-ring-1"></div>
+          <div class="background-ring background-ring-2"></div>
+          <div class="background-ring background-ring-3"></div>
+          
+          <!-- Stars -->
+          <div class="star star-1"></div>
+          <div class="star star-2"></div>
+          <div class="star star-3"></div>
+          <div class="star star-5"></div>
+          <div class="star star-6"></div>
+          <div class="star star-7"></div>
+          <div class="star star-8"></div>
+          <div class="star star-9"></div>
+          <div class="star star-10"></div>
+
           <p class="subtitle">Web/Front-End Developer</p>
           <h1>
             Hello, I'm <span class="name">Ian Njagah</span> <br />
@@ -37,7 +51,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div>    
     <!-------------about------------->
     <div id="about">
       <div class="container">
@@ -180,7 +194,7 @@
               <h3>online shopping app</h3>
               <p>
                 The app connects you to the best onlineshop around the world.
-                Download it from playstore.
+                Click to View.
               </p>
               <a
                 href="https://the-shoppey.vercel.app/"
@@ -206,57 +220,40 @@
             </p>
             <p><i class="fa-sharp fa-solid fa-square-phone"></i>0717393483</p>
             <div class="social-icons">
-              <a href="#https://www.instagram.com/_njagah_/"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="https://x.com/_fw_njagah_"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a href="#https://www.instagram.com/_njagah_/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/ian-ndungu-778530291/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="files/ian-cv.docx" download class="btn btn2"
-                >Download CV</a
-              >
+              <a href="https://www.instagram.com/njagah_gram/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://x.com/_fw_njagah_"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/njagah_gram/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/ian-ndungu-778530291/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="files/ian-cv.docx" download class="btn btn2">Download CV</a>
             </div>
           </div>
-          <!---------------- Include the emailjs-com and SweetAlert2 libraries ----------------------->
-          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+        
           <div class="contact-right">
             <form id="contactForm">
               <input type="text" id="name" placeholder="Your Name" />
               <input type="email" id="email" placeholder="Your Email" />
               <textarea id="message" placeholder="Your Message"></textarea>
-              <button type="button" class="btn btn2" onclick="sendMessage()">
-                Send Message
-              </button>
+              <button type="button" class="btn btn2" onclick="sendMessage()">Send Message</button>
             </form>
           </div>
-
+        
+          <!-- Include the emailjs-com and SweetAlert2 libraries -->
+          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
           <script>
-            // Initialize the emailjs-com library with your user ID
             emailjs.init("uZ9YRGKNjK1faDgv0");
-
-            // Function to send the message
+        
             function sendMessage() {
-              // Get form data
               const name = document.getElementById("name").value;
               const email = document.getElementById("email").value;
               const message = document.getElementById("message").value;
-
-              // consolelog form data for debugging
+        
               console.log("Name:", name);
               console.log("Email:", email);
               console.log("Message:", message);
-
-              // Check if any field is empty
+        
               if (!name || !email || !message) {
-                // sweetAlert icon
                 Swal.fire({
                   icon: "error",
                   title: "Oops...",
@@ -266,8 +263,7 @@
                 });
                 return;
               }
-
-              // Send email
+        
               emailjs
                 .send("portfolio_zpn6gso", "portfolio_svv9meo", {
                   to_email: "ianndungu06@gmail.com",
@@ -278,7 +274,6 @@
                 .then(
                   function (response) {
                     console.log("Email sent successfully", response);
-                    // Use SweetAlert2 for a success message
                     Swal.fire({
                       icon: "success",
                       title: "Success!",
@@ -286,12 +281,10 @@
                       confirmButtonColor: "orange",
                       confirmButtonText: "OK",
                     });
-                    // Optionally, clear the form fields
                     document.getElementById("contactForm").reset();
                   },
                   function (error) {
                     console.log("Error sending email", error);
-                    // Use SweetAlert2 for an error message
                     Swal.fire({
                       icon: "error",
                       title: "Oops...",
@@ -303,13 +296,13 @@
                 );
             }
           </script>
-        </div>
+        </div>        
       </div>
       <div class="copyright">
         <p>
-          copyright @ Njagah<i class="fa-solid fa-cog"></i> By Ian .N. Ndungu
+          copyright &copy; <span id="current-year"></span> :By  Njagah<i class="fa-solid fa-cog"></i> 
         </p>
-      </div>
+      </div>      
     </div>
     <script src="./index.js"></script>
   </body>
